@@ -1,6 +1,4 @@
-# My Resume
-
-## Build site
+## Build
 
 Use `npm run build` to build site for production.
 
