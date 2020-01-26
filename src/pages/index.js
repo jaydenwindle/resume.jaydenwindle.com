@@ -76,7 +76,7 @@ function IndexPage() {
                       />
                     </svg>
                     Lead the development of a cross-platform consumer mobile app
-                    and it's backend from idea to scalable production deployment
+                    and its backend from idea to scalable production deployment
                   </p>
                   <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
                     <svg
@@ -171,8 +171,7 @@ function IndexPage() {
                     />
                   </svg>
                   Helped launch a new digital forensics product used by police
-                  forces and government agencies around the world.Integrated
-                  numerous cloud service APIs into a
+                  forces and government agencies around the world.
                 </p>
                 <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
                   <svg
@@ -382,8 +381,8 @@ function IndexPage() {
                   </h3>
                 </header>
                 <p className="mt-2 text-md text-gray-800 leading-normal">
-                  Open-source GraphQL Subscriptions implemetation for Django and
-                  Graphene built using Django Channels.
+                  Open-source GraphQL Subscriptions implementation for Django
+                  and Graphene built using Django Channels.
                 </p>
               </section>
             </section>
