@@ -3,6 +3,24 @@ import React from "react";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
+const CheckIcon = () => (
+  <svg
+    className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
+    viewBox="0 0 24 24"
+  >
+    <path
+      className="fill-current"
+      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
+    />
+  </svg>
+);
+
+const Skill = ({ name }) => (
+  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
+    {name}
+  </li>
+);
+
 function IndexPage() {
   return (
     <Layout>
@@ -66,45 +84,21 @@ function IndexPage() {
                     </p>
                   </header>
                   <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                    <svg
-                      className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        className="fill-current"
-                        d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                      />
-                    </svg>
+                    <CheckIcon />
                     Lead the development of a cross-platform consumer mobile app
                     and its backend from idea to scalable production deployment
                   </p>
                   <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                    <svg
-                      className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        className="fill-current"
-                        d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                      />
-                    </svg>
+                    <CheckIcon />
                     Incorporated user and stakeholder feedback quickly to
                     deliver countless iterations across 4 major versions
                   </p>
                   <section className="mt-2 mb-4 col-break-avoid">
                     <ul className="mb-6 flex flex-wrap text-md leading-relaxed">
-                      <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                        Django
-                      </li>
-                      <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                        React Native
-                      </li>
-                      <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                        GraphQL
-                      </li>
-                      <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                        Kubernetes
-                      </li>
+                      <Skill name="Django" />
+                      <Skill name="React Native" />
+                      <Skill name="GraphQL" />
+                      <Skill name="Kubernetes" />
                     </ul>
                   </section>
                 </section>
@@ -120,33 +114,17 @@ function IndexPage() {
                   </p>
                 </header>
                 <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                  <svg
-                    className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      className="fill-current"
-                      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                    />
-                  </svg>
+                  <CheckIcon />
                   Partnered with dozens of companies and several remote software
                   development agencies to develop functional web apps and
                   high-quality websites
                 </p>
                 <section className="mt-2 mb-4 col-break-avoid">
                   <ul className="mb-6 flex flex-wrap text-md leading-relaxed">
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      JavaScript
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      PHP
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      WordPress
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      HTML5/CSS
-                    </li>
+                    <Skill name="Javascript" />
+                    <Skill name="PHP" />
+                    <Skill name="WordPress" />
+                    <Skill name="HTML5/CSS" />
                   </ul>
                 </section>
               </section>
@@ -161,45 +139,21 @@ function IndexPage() {
                   </p>
                 </header>
                 <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                  <svg
-                    className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      className="fill-current"
-                      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                    />
-                  </svg>
+                  <CheckIcon />
                   Helped launch a new digital forensics product used by police
-                  forces and government agencies around the world.
+                  forces and government agencies around the world
                 </p>
                 <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                  <svg
-                    className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      className="fill-current"
-                      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                    />
-                  </svg>
+                  <CheckIcon />
                   Reverse-engineered and integrated numerous cloud service APIs
                   into an C#/.NET application
                 </p>
                 <section className="mt-2 mb-4 col-break-avoid">
                   <ul className="mb-6 flex flex-wrap text-md leading-relaxed">
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      C#
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      .NET
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Jenkins
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      REST APIs
-                    </li>
+                    <Skill name="C#" />
+                    <Skill name=".NET" />
+                    <Skill name="Jenkins" />
+                    <Skill name="REST APIs" />
                   </ul>
                 </section>
               </section>
@@ -214,95 +168,17 @@ function IndexPage() {
                   </p>
                 </header>
                 <p className="pl-7 mt-2 text-md text-gray-800 leading-normal">
-                  <svg
-                    className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.7 flex-shrink-0 text-gray-600 print:text-gray-900"
-                    viewBox="0 0 24 24"
-                  >
-                    <path
-                      className="fill-current"
-                      d="M12 22a10 10 0 1 1 0-20 10 10 0 0 1 0 20zm0-2a8 8 0 1 0 0-16 8 8 0 0 0 0 16zm-2.3-8.7l1.3 1.29 3.3-3.3a1 1 0 0 1 1.4 1.42l-4 4a1 1 0 0 1-1.4 0l-2-2a1 1 0 0 1 1.4-1.42z"
-                    />
-                  </svg>
+                  <CheckIcon />
                   Lead development of low-level serial drivers for a secure SoC
                 </p>
                 <section className="mt-2 mb-4 col-break-avoid">
                   <ul className="mb-6 flex flex-wrap text-md leading-relaxed">
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      C
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Python
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Bash
-                    </li>
+                    <Skill name="C" />
+                    <Skill name="Python" />
+                    <Skill name="Bash" />
                   </ul>
                 </section>
               </section>
-            </section>
-
-            <section className="mt-9">
-              {/* <!-- To keep in the same column --> */}
-              <div className="col-break-avoid">
-                <h2 className="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
-                  CONTACT
-                </h2>
-                <section className="mb-4 col-break-avoid">
-                  <ul>
-                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
-                      <a href="//jaydenwindle.com" className="group">
-                        <svg
-                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
-                            d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z"
-                          />
-                        </svg>
-                        jaydenwindle.com
-                      </a>
-                    </li>
-                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
-                      <a href="//github.com/jaydenwindle" className="group">
-                        <svg
-                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
-                            d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z"
-                          />
-                        </svg>
-                        github.com/jaydenwindle
-                      </a>
-                    </li>
-                    {/* <!-- <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
-                  <a href="//linkedin.com/in/jayden-windle-79b0bb68/" className="group"><svg className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
-                      viewBox="0 0 24 24">
-                      <path
-                        className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
-                        d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z" />
-                    </svg>linkedin.com/in/jayden-windle-79b0bb68/
-                  </a>
-                </li> --> */}
-                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
-                      <a href="mailto:jaydenwindle@gmail.com" className="group">
-                        <svg
-                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
-                            d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z"
-                          />
-                        </svg>
-                        jaydenwindle@gmail.com
-                      </a>
-                    </li>
-                  </ul>
-                </section>
-              </div>
             </section>
 
             <section className="mt-9">
@@ -404,18 +280,10 @@ function IndexPage() {
                     </p>
                   </header>
                   <ul className="my-2 mb-6 flex flex-wrap text-md leading-relaxed">
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      ES6
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Node
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      React / React Native
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Typescript
-                    </li>
+                    <Skill name="ES6" />
+                    <Skill name="Node.js" />
+                    <Skill name="React / React Native" />
+                    <Skill name="Typescript" />
                   </ul>
                 </section>
 
@@ -429,24 +297,12 @@ function IndexPage() {
                     </p>
                   </header>
                   <ul className="my-2 mb-6 flex flex-wrap text-md leading-relaxed">
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Django
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Django REST Framework
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Graphene
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Flask
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Asyncio
-                    </li>
-                    <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                      Ansible
-                    </li>
+                    <Skill name="Django" />
+                    <Skill name="Django REST Framework" />
+                    <Skill name="Graphene" />
+                    <Skill name="Flask" />
+                    <Skill name="Asyncio" />
+                    <Skill name="Ansible" />
                   </ul>
                 </section>
               </div>
@@ -458,33 +314,16 @@ function IndexPage() {
                   </h3>
                 </header>
                 <ul className="py-1.5 mb-6 flex flex-wrap text-md leading-relaxed">
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    GraphQL
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    Git
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    CI/CD
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    Kubernetes
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    Linux
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    PHP
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    WordPress
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    HTML5/CSS
-                  </li>
-                  <li className="px-3 py-0 mr-1.5 mt-1.5 flex item-center justify-center rounded-full text-base text-gray-750 print:bg-white print:border-inset bg-gray-200">
-                    Figma
-                  </li>
+                  <Skill name="GraphQL" />
+                  <Skill name="Git" />
+                  <Skill name="CI/CD" />
+                  <Skill name="Kubernetes" />
+                  <Skill name="Linux" />
+                  <Skill name="Bash" />
+                  <Skill name="PHP" />
+                  <Skill name="WordPress" />
+                  <Skill name="HTML5/CSS" />
+                  <Skill name="Figma" />
                 </ul>
               </section>
             </section>
@@ -505,6 +344,70 @@ function IndexPage() {
                       Bachelor of Computer Science | 2015 - 2017
                     </p>
                   </header>
+                </section>
+              </div>
+            </section>
+
+            <section className="mt-9">
+              {/* <!-- To keep in the same column --> */}
+              <div className="col-break-avoid">
+                <h2 className="mb-4 font-bold tracking-widest text-sm2 text-gray-550 print:font-normal">
+                  CONTACT
+                </h2>
+                <section className="mb-4 col-break-avoid">
+                  <ul>
+                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
+                      <a href="//jaydenwindle.com" className="group">
+                        <svg
+                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
+                            d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z"
+                          />
+                        </svg>
+                        jaydenwindle.com
+                      </a>
+                    </li>
+                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
+                      <a href="//github.com/jaydenwindle" className="group">
+                        <svg
+                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
+                            d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z"
+                          />
+                        </svg>
+                        github.com/jaydenwindle
+                      </a>
+                    </li>
+                    {/* <!-- <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
+                  <a href="//linkedin.com/in/jayden-windle-79b0bb68/" className="group"><svg className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
+                      viewBox="0 0 24 24">
+                      <path
+                        className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
+                        d="M19.48 13.03A4 4 0 0 1 16 19h-4a4 4 0 1 1 0-8h1a1 1 0 0 0 0-2h-1a6 6 0 1 0 0 12h4a6 6 0 0 0 5.21-8.98L21.2 12a1 1 0 1 0-1.72 1.03zM4.52 10.97A4 4 0 0 1 8 5h4a4 4 0 1 1 0 8h-1a1 1 0 0 0 0 2h1a6 6 0 1 0 0-12H8a6 6 0 0 0-5.21 8.98l.01.02a1 1 0 1 0 1.72-1.03z" />
+                    </svg>linkedin.com/in/jayden-windle-79b0bb68/
+                  </a>
+                </li> --> */}
+                    <li className="mt-1.5 leading-normal text-gray-800 pl-7 text-md">
+                      <a href="mailto:jaydenwindle@gmail.com" className="group">
+                        <svg
+                          className="w-4.5 h-4.5 inline -ml-7 mr-1.5 -mt-0.8"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            className="text-gray-600 fill-current group-hover:text-gray-800 change-color-fast print:text-gray-900"
+                            d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6c0-1.1.9-2 2-2zm16 3.38V6H4v1.38l8 4 8-4zm0 2.24l-7.55 3.77a1 1 0 0 1-.9 0L4 9.62V18h16V9.62z"
+                          />
+                        </svg>
+                        jaydenwindle@gmail.com
+                      </a>
+                    </li>
+                  </ul>
                 </section>
               </div>
             </section>
