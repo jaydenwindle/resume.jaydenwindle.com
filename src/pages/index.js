@@ -276,7 +276,7 @@ function IndexPage() {
                       JavaScript
                     </h3>
                     <p className="leading-normal text-md text-gray-650">
-                      8 years exp.
+                      7 years exp.
                     </p>
                   </header>
                   <ul className="my-2 mb-6 flex flex-wrap text-md leading-relaxed">
